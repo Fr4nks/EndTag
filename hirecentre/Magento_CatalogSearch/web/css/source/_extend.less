@@ -1,0 +1,48 @@
+//
+//  Desktop
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .block-search {
+        .actions button { 
+            background: @color-red;
+            opacity: 1;
+            padding: 0 20px;
+            border: none;
+            border-color: @color-red;
+            height: 32px;
+            color: white;
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .block-search {
+        input {
+            border-color: @color-red;
+        }
+        .actions button { 
+            background: @color-red;
+            border-color: @color-red;
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    .block-search {
+        input {
+            border: none;
+        }
+    }
+
+
+}

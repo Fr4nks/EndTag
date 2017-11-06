@@ -1,0 +1,101 @@
+.product-item-actions { display: none; }
+
+.product-item .price-box { margin: 0; }
+
+
+@price-color: @color-red;
+
+.price-wrapper  { display: none; }
+// .price-box .sectioned-price-test { 
+//     .price { 
+//         font-size: @font-size__xl;
+//         font-weight: @font-weight__heavier;
+//         color: @price-color;
+
+//     }
+//     .whole{ 
+//         font-size: @font-size__xl*2;
+//         font-weight: @font-weight__bold;
+//         color: @price-color;
+//         letter-spacing: -2px;
+//    }
+//    .cents{ 
+//        font-size: @font-size__xl;
+//        font-weight: @font-weight__semibold;
+//        color: @price-color;
+//        letter-spacing: -2px;
+//    }
+// }
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .catalog-category-view{
+        .product-item { width: 100%!important; border-top:  1px solid #cccccc;  }
+
+        .product-items { 
+            flex-wrap: wrap;
+            .product-item { width: 24.49%;
+
+            }
+        }
+
+
+        .price-container{ padding: 0; }
+        .price-box .sectioned-price-test { 
+            font-weight: bold;
+            }
+        .product-image-container { padding: 2px 10px; }
+        .products-grid .product-item-info { display: table; width: 100%; }
+        .product-image-container, .infoListHire, .price-box {
+            display: table-cell; 
+            vertical-align: middle;  }
+        .product-image-wrapper[style] {
+            width: 40px;
+            height: 40px;
+            padding-bottom: 0!important;
+              }
+        .product-image-photo { padding: 0; }
+        .infoListHire { 
+            display: table-cell;  
+
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+
+
+
+}
+
+
+
+// Font size
+// @font-size__txl: ceil(3 * @font-size__base); // 42px
+// @font-size__dxl: ceil(2 * @font-size__base); // 28px
+// @font-size__xl: ceil(1.5 * @font-size__base); // 21px
+// @font-size__l: ceil(1.25 * @font-size__base); // 18px
+// @font-size__s: ceil(.85 * @font-size__base); // 12px
+// @font-size__xs: floor(.75 * @font-size__base); // 11px
+
+//  Weights
+// @font-weight__light: 300;
+// @font-weight__regular: 400;
+// @font-weight__heavier: 500;
+// @font-weight__semibold: 600;
+// @font-weight__bold: 700;
+
+//  Styles
+// @font-style__base: normal;
+// @font-style__emphasis: italic;
+
+//  Line heights
+// @line-height__base: 1.428571429;
+// @line-height__computed: floor(@font-size__base * @line-height__base);
+// @line-height__xl: 1.7;
+// @line-height__l: 1.5;
+// @line-height__s: 1.33;

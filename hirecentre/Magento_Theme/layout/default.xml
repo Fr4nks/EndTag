@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+        <referenceContainer name="sidebar.additional">
+            <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+            <referenceBlock name="wishlist_sidebar" remove="true"/>
+        </referenceContainer>
+        
+        <referenceBlock name="header-wrapper">       
+            <block class="Magento\Framework\View\Element\Text" name="about_us.label" after="logo" >
+                <arguments>
+                <argument translate="true" name="text" xsi:type="string"><![CDATA[<div class="logo-text">Paarl, Western Cape <span>10 Kaplan street, Huguenot - 7646</span></div>]]></argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <referenceBlock name="footer_links">
+           <block class="Magento\Framework\View\Element\Html\Link\Current" name="your-link-name">
+               <arguments>
+                   <argument name="label" xsi:type="string">Title</argument>
+                   <argument name="path" xsi:type="string">path-of-your-page</argument>
+               </arguments>
+           </block>
+       </referenceBlock>
+
+            <referenceBlock name="footer_links" remove="true" />
+            <referenceBlock name="report.bugs" remove="true" />
+
+            <referenceBlock name="header.panel" remove="true"/>
+            <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+            <referenceBlock name="catalog.leftnav" remove="true" />
+            <referenceBlock name="catalog.sidebar" remove="true"/>
+            <referenceBlock name="breadcrumbs" remove="true" />
+            <referenceBlock name="minicart" remove="true" />
+            <referenceBlock name="register-link" remove="true" />           <!--for Create Account Link-->
+            <referenceBlock name="authorization-link" remove="true" />      <!--for Sign In Link  -->
+            <referenceBlock name="wish-list-link" remove="true" />          <!--for WishList Link-->
+            <referenceBlock name="my-account-link" remove="true" />         <!--for My Account Link-->
+            <referenceBlock name="header" remove="true"/>                   <!--for Welcome Message-->
+    
+    </body>
+</page>
+
+
